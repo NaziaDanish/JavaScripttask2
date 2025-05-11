@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Task 2</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="icon" type="image/png" href="assets/javascript-logo.png">
+
+    
+</head>
+
+<body>
+    <h1>JavaScript Task 2</h1>
+    <h1>Q1- Declare variable using var. Show examples of different data types (string, number, boolean, object, array).
+    </h1>
+    <h2> // String</h2>
+    <p>var name = "Nazia";</p>
+
+    <h2>// Number</h2>
+    <p>var age = 30;</p>
+
+
+    <h2>// Boolean</h2>
+    <p>var isStudent = false;</p>
+
+
+    <h2>// Object</h2>
+    <p>var person = { firstName: "Nazia", lastName: "Mansoor", age: 30 };</p>
+
+
+    <h2>// Array</h2>
+    <p>var numbers = [1, 2, 3, 4, 5];</p>
+
+    <h1>Q2- Write a program that takes two numbers and displays the result of all basic arithmetic operations.</h1>
+
+    <h2>// Pehle 2 number lenge input lene k liye.</h2>
+    <p>var num1 = prompt("Pehla number daalainge:");</p>
+    <p>var num2 = prompt("Dosra number daalainge:");</p>
+
+    <h2>// Numbers ko integer mein convert karna</h2>
+    <p>num1 = parseInt(num1);</p>
+    <p>num2 = parseInt(num2);</p>
+
+    <h2>// Operations</h2>
+    <p>var addition = num1 + num2;</p>
+    <p>var subtraction = num1 - num2;</p>
+    <p>var multiplication = num1 * num2;</p>
+    <p>var division = num1 / num2;</p>
+
+    <h2>// Results in Alert</h2>
+    <p>alert("Addition: " + addition);</p>
+    <p>alert("Subtraction: " + subtraction);</p>
+    <p>alert("Multiplication: " + multiplication);</p>
+    <p>alert("Division: " + division);</p>
+    <h2>// Console.log</h2>
+    <p>console.log("Addition: " + addition);</p>
+    <p>console.log("Subtraction: " + subtraction);</p>
+    <p>console.log("Multiplication: " + multiplication);</p>
+    <p>console.log("Division: " + division);</p>
+
+    <h1>Q3- Create a program that takes a number as input and determines if it’s positive, negative, or zero using if...else</h1>
+    <p>var number = prompt("Ek number daalain:");
+        <br>
+        if (number > 0) {
+        <br>
+        console.log("Number positive hai.");
+        <br>
+        } else if (number < 0) { <br>
+            console.log("Number negative hai.");
+            <br>
+            } else {
+            <br>
+            console.log("Number zero hai.");
+            }
+    </p>
+
+    <h1>Q4- Create an array of 5 students. Use array methods to:</h1>
+    <h2>1. Add a new student to the end of the array.</h2>
+    <h2>// 5 students ka array</h2>
+    <p>var students = ["Ali", "Ahmed", "Sara", "Maya", "Zain"];</p>
+
+    <h2>// Ek student add karna (last mein)</h2>
+    <p>students.push("Bilal");</p>
+
+    <h2>//Remove the last student from the array.</h2>
+    <p>students.pop();</p>
+
+
+    <h1>Q5- Add a student
+        <br>
+        Remove the last student
+        <br>
+        Sort the array
+        <br>
+        Display the array in reverse order.
+    </h1>
+
+    <h2>// Array ko sort karna (alphabetical)</h2>
+    <p>students.sort();</p>
+
+    <h2>// Array ko reverse order mein dikhana</h2>
+    <p>students.reverse();</p>
+
+    <h2>// Start mein ek student add karna</h2>
+    <p>students.unshift("Fatima");</p>
+
+    <h2>// Start ka ek student hataana</h2>
+    <p>students.shift();</p>
+
+    <h2>// Slice – array ka ek hissa lena (index 1 se 3 tak)</h2>
+    <p>var slicedStudents = students.slice(1, 4);</p>
+    <p>console.log("Sliced students (1 to 3):", slicedStudents);</p>
+
+    <h2>// Splice – array mein student insert karna (index 2 par ek naya student "Hina" add)</h2>
+    <p>students.splice(2, 0, "Hina"); // 2 = index, 0 = delete nothing, "Hina" = add</p>
+
+    <h2>// Final array ko display karna</h2>
+    <p>console.log("Final Students List:", students);</p>
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
